@@ -32,7 +32,7 @@ const AppLayout = () => {
 const App = () => {
   const [data, setData] = useState(null);
   const getData = async () => {
-    const res = await axios.get(`http://localhost:5000/`);
+    const res = await axios.get(`http://localhost:3000/`);
     console.log(res.data);
     setData(res.data);
   };
